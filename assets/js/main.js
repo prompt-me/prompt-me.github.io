@@ -22,6 +22,18 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
+  document.addEventListener('scroll', ()=> {
+    const header = document.querySelector("header")
+
+    if (window.scrollY > 0) {  
+      header.style.backgroundColor = "black"
+    } else {
+      header.style.backgroundColor = "transparent";
+    }
+
+
+  });
+
   /**
    * Mobile nav toggle
    */
